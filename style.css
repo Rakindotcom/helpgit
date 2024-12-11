@@ -5,6 +5,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 header {
@@ -36,6 +40,7 @@ header {
 
 .hmenu ul li a {
     text-decoration: none;
+    white-space: nowrap;
     font-weight: 700;
     font-size: 1.2em;
     color: rgb(82, 80, 80);
@@ -50,9 +55,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid maroon;
 }
 
 .c2box img {
@@ -91,13 +98,12 @@ header {
     font-weight: 700;
 }
 
-.c1box{
+.c1box {
     animation: slideFromLeft 1s ease forwards;
     opacity: 0;
 }
 
 @keyframes slideFromLeft {
-
     0% {
         opacity: 0;
         transform: translateX(-100%);
@@ -107,5 +113,100 @@ header {
         opacity: 1;
         transform: translateX(0);
     }
+}
 
+.getting_started h1 {
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.assume {
+    width: 90%;
+    margin: 0 auto 50px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.faq1 {
+    width: 90%;
+    margin: 0 auto 50px;
+}
+
+.answer ul {
+    list-style: none;
+}
+
+.answer {
+    display: none;
+}
+
+.answer.open {
+    display: block;
+}
+
+.question {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 20px 0;
+    border-bottom: 2px solid rgb(70, 79, 156);
+}
+
+.question:hover {
+    color: maroon;
+}
+
+.question::after {
+    content: "+";
+    float: right;
+    font-size: 1.1em;
+}
+
+.question.open::after {
+    content: "-";
+}
+
+.answer a {
+    color: rgb(70, 79, 156);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.answer a:hover {
+    color: maroon;
+    text-decoration: underline;
+}
+
+.code-block {
+    position: relative;
+    background-color: #E7DECC;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    overflow-x: auto;
+}
+
+.code-block button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.code-block button:hover {
+    background-color: #0056b3;
+}
+
+.code-block pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: monospace;
 }
