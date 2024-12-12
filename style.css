@@ -210,3 +210,33 @@ header {
     word-wrap: break-word;
     font-family: monospace;
 }
+
+footer {
+    background-color: rgb(41, 40, 40);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 70%;
+    margin: auto;
+}
+
+.flink a {
+    text-decoration: none;
+    color: rgb(179, 170, 170);
+}
+
+.flink a:hover {
+    text-decoration: underline;
+    color: lightblue;
+}

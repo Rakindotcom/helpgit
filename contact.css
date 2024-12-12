@@ -67,6 +67,7 @@ footer ul {
 
 .flink a {
     text-decoration: none;
+    color: rgb(179, 170, 170);
 }
 
 .flink a:hover {
@@ -77,18 +78,20 @@ footer ul {
 main {
     background-color: #165B65;
     display: flex;
-    height: 69vh;
+    height: 80vh;
 }
 
 .contact {
     width: 40%;
     color: white;
 }
-.c a{
+
+.c a {
     text-decoration: none;
     color: white;
 }
-.c a:hover{
+
+.c a:hover {
     text-decoration: underline;
     color: wheat;
 }
@@ -151,7 +154,8 @@ h1 {
     border-radius: 15px;
     padding: 20px;
 }
-.form{
+
+.form {
     animation: slideFromRight 0.5s ease forwards;
     opacity: 0;
 }
@@ -200,16 +204,25 @@ textarea {
 }
 
 button {
-    width: 20%;
-    height: 30px;
+    padding: 10px 20px;
     background: linear-gradient(to Right, #006C6D, #02262F);
     color: linen;
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 button:hover {
     background: linear-gradient(to right, maroon, rgb(75, 31, 31));
+}
+
+.another {
+    display: none;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: maroon;
+    cursor: pointer;
 }
